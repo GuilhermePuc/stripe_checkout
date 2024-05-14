@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Payment with Stripe</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div style="width: 100%; margin-top: 40px">
+            <form action="/checkout" method="post" style="display: flex; flex-direction: column; gap: 8px; align-items: center; justify-content: center;">
+                <input id="name" type="text" name="name" required placeholder="Enter the name" style="height: 40px; width: 320px; font-size: 18px;">
+                <input id="email" type="text" name="email" required placeholder="Enter the e-mail" style="height: 40px; width: 320px; font-size: 18px;">
+                <input type="submit" style="font-size: 24px; padding: 20px; border-radius: 20px; cursor: pointer; margin-top: 40px;" value="Proceed to Checkout">
+            </form>
+        </div>
+    </body>
+</html>
