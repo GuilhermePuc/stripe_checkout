@@ -101,7 +101,7 @@ app.get('/complete', async (req, res) => {
         stripe.checkout.sessions.listLineItems(req.query.session_id)
     ])
 
-    res.send('Your payment was successful')
+    res.send('Your payment was successful <br><br>' + JSON.stringify(result))
 })
 
 app.get('/cancel', (req, res) => {
